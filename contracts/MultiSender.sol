@@ -16,7 +16,7 @@ contract MultiSender is Ownable {
     /// @param _recipients An array of recipient addresses.
     /// @param _amounts An array of amounts corresponding to each recipient.
     /// @dev The sum of _amounts must match the value sent with the transaction.
-    function sendNativeTokens(address[] calldata _recipients, uint256[] calldata _amounts) external payable onlyOwner {
+    function sendNativeTokens(address[] calldata _recipients, uint256[] calldata _amounts) external payable {
         require(_recipients.length == _amounts.length, "Recipients and amounts length mismatch");
         require(_recipients.length > 0, "No recipients provided");
 
@@ -43,7 +43,7 @@ contract MultiSender is Ownable {
         address _tokenAddress,
         address[] calldata _recipients,
         uint256[] calldata _amounts
-    ) external onlyOwner {
+    ) external {
         require(_recipients.length == _amounts.length, "Recipients and amounts length mismatch");
         require(_recipients.length > 0, "No recipients provided");
 
