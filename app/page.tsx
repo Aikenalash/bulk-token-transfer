@@ -96,17 +96,23 @@ const MULTISENDER_ABI = [
 
 // DEPLOYED MULTISENDER CONTRACT ADDRESSES FOR EACH NETWORK
 const MULTISENDER_CONTRACT_ADDRESSES: MultiSenderContractAddressesMap = {
-  137: "0xD38Fc9b1DD0148C8D8C79080E638532Bd96b3205", // Polygon Mainnet
-  56:  "0x6FcDcb0675c5E000CeA8ddF3B0AFAD9256a839A6", // BNB Smart Chain
-  1625:"0x35a4840bbDA3ff0384821568Cee0F2BA7fDc7baD", // Gravity Alpha Mainnet (updated)
-  8453:"0x6FcDcb0675c5E000CeA8ddF3B0AFAD9256a839A6", // Base Mainnet
-  42161:"0x6FcDcb0675c5E000CeA8ddF3B0AFAD9256a839A6", // Arbitrum One
-  10: "0x6FcDcb0675c5E000CeA8ddF3B0AFAD9256a839A6", // Optimism Mainnet
-  43114: "0x6FcDcb0675c5E000CeA8ddF3B0AFAD9256a839A6", // Avalanche C-Chain Mainnet
-  250: "0x6FcDcb0675c5E000CeA8ddF3B0AFAD9256a839A6", // Fantom Mainnet
-  1: "0x6FcDcb0675c5E000CeA8ddF3B0AFAD9256a839A6", // Ethereum Mainnet
-  // Add other deployed contract addresses here as you deploy them
-  // e.g., 1: "0xYourEthereumMultiSenderAddress",
+  // BNB Smart Chain Mainnet
+  56: "0xe9f4A6e5dC21A013c79F3e88eaaB723330e04a29",
+  // Polygon Mainnet
+  137: "0x007A7dAF96F6094727e086F8F3EB9ef216346340",
+  // Avalanche C-Chain Mainnet
+  43114: "0xD38Fc9b1DD0148C8D8C79080E638532Bd96b3205",
+  // Fantom Mainnet
+  250: "0xD38Fc9b1DD0148C8D8C79080E638532Bd96b3205",
+  // Arbitrum One
+  42161: "0xD38Fc9b1DD0148C8D8C79080E638532Bd96b3205",
+  // Optimism Mainnet
+  10: "0xD38Fc9b1DD0148C8D8C79080E638532Bd96b3205",
+  // Base Mainnet
+  8453: "0xD38Fc9b1DD0148C8D8C79080E638532Bd96b3205",
+  // Gravity Alpha
+  1625: "0x35a4840bbDA3ff0384821568Cee0F2BA7fDc7baD",
+  // Add more as needed
 };
 
 export default function Home() {
